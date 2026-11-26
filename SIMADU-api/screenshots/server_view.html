@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<style>
+  body {
+    background-color: #0d1117;
+    margin: 0;
+    padding: 30px;
+    font-family: 'Consolas', 'Courier New', monospace;
+    color: #c9d1d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .terminal {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    width: 900px;
+    overflow: hidden;
+  }
+  .terminal-header {
+    background-color: #21262d;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #30363d;
+  }
+  .buttons {
+    display: flex;
+    gap: 8px;
+  }
+  .btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  .btn-red { background-color: #ff5f56; }
+  .btn-yellow { background-color: #ffbd2e; }
+  .btn-green { background-color: #27c93f; }
+  .title {
+    margin-left: 16px;
+    font-size: 13px;
+    color: #8b949e;
+  }
+  .terminal-body {
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .prompt { color: #58a6ff; }
+  .cmd { color: #f0f6fc; font-weight: bold; }
+  .log-info { color: #3fb950; font-weight: bold; }
+  .log-url { color: #79c0ff; text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="terminal">
+  <div class="terminal-header">
+    <div class="buttons">
+      <div class="btn btn-red"></div>
+      <div class="btn btn-yellow"></div>
+      <div class="btn btn-green"></div>
+    </div>
+    <div class="title">Server Console - D:\wse uts\simadu-api</div>
+  </div>
+  <div class="terminal-body">
+    <div><span class="prompt">PS D:\wse uts\simadu-api&gt;</span> <span class="cmd">npm start</span></div>
+    <br>
+    <div>&gt; simadu-api@1.0.0 start</div>
+    <div>&gt; node server.cjs</div>
+    <br>
+    <div><span class="log-info">[INFO]</span> SIMADU API berjalan pada <span class="log-url">http://localhost:3000</span></div>
+    <div><span class="log-info">[INFO]</span> Dokumentasi Swagger UI: <span class="log-url">http://localhost:3000/docs</span></div>
+    <div><span class="log-info">[READY]</span> Express 5 layered REST API siap menerima koneksi consumer...</div>
+  </div>
+</div>
+</body>
+</html>
